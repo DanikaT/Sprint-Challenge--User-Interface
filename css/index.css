@@ -33,12 +33,6 @@ body {
     margin: 0 200px 0 200px;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: hotpink;
-    }
-  }
-
 ol, ul {
 	list-style: none;
 }
@@ -75,28 +69,28 @@ p {
 }
 
 .container {
-    width: 800px;
+
     margin: 0 auto;
 }
-
-@media only screen and (max-width: 600px) {
-    .container {
-      max-width: 600px;
-    }
-  }
 
 .top-header {
 	display: flex;
 	Justify-content: space-around;
     align-items: flex-end;
     margin: 10px 0 30px 0;
-    }
-
-    @media only screen and (max-width: 600px) {
+    } 
+    @media screen and (max-width: 800px) {
         .top-header {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          padding: 20px;
+        }
+      }
+ 
+      @media screen and (max-width: 800px) {
+        .logo {
+        padding-bottom: 20px;
         }
       }
     
@@ -106,11 +100,7 @@ p {
     width: 70%;
 }  
 
-@media only screen and (max-width: 600px) {
-    .nav {
-     justify-content: center;
-    }
-  }
+
 .top-header nav a {
 	color: black;
 	text-decoration: none;
@@ -131,9 +121,10 @@ p {
     margin-left: -10px;
 }
 
-@media only screen and (max-width: 600px) {
-    .header-img {
-      display: none;
+@media screen and (max-width: 800px) {
+    .main-img {
+     width: 100%;
+     height: 0 auto;
     }
   }
 
@@ -145,12 +136,21 @@ p {
     border-bottom: 1px dashed black;
 }
 
+@media screen and (max-width: 800px) {
+    .top-content {
+    
+    justify-content: center;
+    align-items: center;
+    }
+  }
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;
     border-bottom: 1px solid black;  
 }
+
 
 .middle-content {
     margin-bottom: 20px;
@@ -256,13 +256,8 @@ footer nav a {
 	justify-content: space-evenly;
 	align-items: space-between;
     margin: 20px;
+    animation-name: scale-up-center;
     }
-
-    @media only screen and (max-width: 600px) {
-        .boxes {
-          flex-direction: column;
-        }
-      }
 
 .box1 {
 	padding: 12px;
@@ -270,12 +265,6 @@ footer nav a {
     border-bottom: 1px solid black;
     padding-bottom: 20px;
 }
-
-@media only screen and (max-width: 600px) {
-    .box-1 {
-      max-width: 100%;
-    }
-  }
 
 .cta-button {
     width: 150px;
@@ -290,6 +279,11 @@ footer nav a {
     
 }
 
+.cta-button:hover {
+    background-color: navy;
+    color: white;
+}
+
 .about-section {
     border-bottom: 1px solid black;
     padding: 20px;
@@ -300,23 +294,8 @@ footer nav a {
     padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-    .about-section {
-      max-width: 100%;
-    }
-  }
-
 
 .work-together {
     padding-bottom: 20px;
 }
-
-@media only screen and (max-width: 600px) {
-    .work-together {
-      max-width: 100%;
-    }
-  }
-
-
-
 
